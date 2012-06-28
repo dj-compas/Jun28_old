@@ -16,7 +16,11 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-		self.backgroundColor = [UIColor blackColor];
+		//self.backgroundColor = [UIColor blackColor];
+        
+        // add space image
+        space = [UIImage imageNamed:@"space.jpg"];
+        
 		CGRect b = self.bounds;
 		CGFloat w = b.size.width;
 		CGFloat h = b.size.height;
@@ -34,13 +38,27 @@
 {
 	if (touches.count > 0)
 	{
-		[UIView animateWithDuration:.3
+		// save current point of sprite as old point
+        oldPoint = sprite.center;
+        
+        // get new touch point
+        newPoint = [[touches anyObject] locationInView:self];
+        
+        NSLog(@"%f, %f", newPoint.x, newPoint.y);
+        
+        [UIView animateWithDuration:.3
 							  delay:0
 							options:UIViewAnimationOptionCurveEaseOut
 						 animations:^{
 							 sprite.center = [[touches anyObject] locationInView:self];
 						 }
-						 completion:Nil];
+						 completion:^(BOOL finished){
+                             if(finished)
+                             {
+                                 
+                             }
+                         }
+         ];
 	}
 }
 
@@ -48,7 +66,11 @@
 {
 	if (touches.count > 0)
 	{
-		NSLog(@"poop");
+		// if a tap occured w/o changing the sprite's position, do the following
+        if(oldPoint.x == newPoint.x && oldPoint.y == newPoint.y)
+        {
+            NSLog(@"poop");
+        }
 	}
 }
 
@@ -61,13 +83,15 @@
 	}
 }
 
-/*
+
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect
 {
     // Drawing code
+    CGRect f = CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height);
+    [space drawInRect:f];
 }
-*/
+
 
 @end

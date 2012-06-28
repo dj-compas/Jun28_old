@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		062629A7159CB37E00BB673B /* space.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 062629A6159CB37E00BB673B /* space.jpg */; };
+		062629AB159CB41600BB673B /* Dropping.m in Sources */ = {isa = PBXBuildFile; fileRef = 062629AA159CB41600BB673B /* Dropping.m */; };
 		C6F13C28159C4AA4006E4491 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F13C27159C4AA4006E4491 /* UIKit.framework */; };
 		C6F13C2A159C4AA4006E4491 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F13C29159C4AA4006E4491 /* Foundation.framework */; };
 		C6F13C2C159C4AA4006E4491 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F13C2B159C4AA4006E4491 /* CoreGraphics.framework */; };
@@ -19,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		062629A6159CB37E00BB673B /* space.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = space.jpg; sourceTree = "<group>"; };
+		062629A9159CB41600BB673B /* Dropping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dropping.h; path = ../Dropping.h; sourceTree = "<group>"; };
+		062629AA159CB41600BB673B /* Dropping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Dropping.m; path = ../Dropping.m; sourceTree = "<group>"; };
 		C6F13C23159C4AA4006E4491 /* Jun28.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jun28.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F13C27159C4AA4006E4491 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C6F13C29159C4AA4006E4491 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -53,6 +58,7 @@
 		C6F13C18159C4AA4006E4491 = {
 			isa = PBXGroup;
 			children = (
+				062629A6159CB37E00BB673B /* space.jpg */,
 				C6F13C50159C5757006E4491 /* invader.png */,
 				C6F13C2D159C4AA4006E4491 /* Jun28 */,
 				C6F13C26159C4AA4006E4491 /* Frameworks */,
@@ -81,6 +87,8 @@
 		C6F13C2D159C4AA4006E4491 /* Jun28 */ = {
 			isa = PBXGroup;
 			children = (
+				062629A9159CB41600BB673B /* Dropping.h */,
+				062629AA159CB41600BB673B /* Dropping.m */,
 				C6F13C41159C4ADC006E4491 /* Sprite.h */,
 				C6F13C42159C4ADC006E4491 /* Sprite.m */,
 				C6F13C3E159C4ABC006E4491 /* View.h */,
@@ -156,6 +164,7 @@
 			files = (
 				C6F13C32159C4AA4006E4491 /* InfoPlist.strings in Resources */,
 				C6F13C51159C5757006E4491 /* invader.png in Resources */,
+				062629A7159CB37E00BB673B /* space.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +179,7 @@
 				C6F13C38159C4AA4006E4491 /* Jun28AppDelegate.m in Sources */,
 				C6F13C40159C4ABC006E4491 /* View.m in Sources */,
 				C6F13C43159C4ADC006E4491 /* Sprite.m in Sources */,
+				062629AB159CB41600BB673B /* Dropping.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +283,7 @@
 				C6F13C3D159C4AA4006E4491 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

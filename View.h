@@ -11,7 +11,10 @@
 
 @interface View : UIView
 {
-	UIView *sprite;
+	UIImage *space;
+    UIView *sprite;
+    CGPoint oldPoint;
+    CGPoint newPoint;
 }
 
 @end
